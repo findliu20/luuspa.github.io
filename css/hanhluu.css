@@ -83,7 +83,7 @@ html, body {
     
     width: 900px;
 }
- 
+
 
 /*button*/
 .button_hehe { 
@@ -94,6 +94,10 @@ html, body {
     font-family: 'HelveticaNeue';
     margin-left: -16px;
     /*border: 1px solid #FF5100;*/
+}
+
+.button_hehe:hover {
+	background-color: #EEEDEA;
 }
 
 .button_content {
