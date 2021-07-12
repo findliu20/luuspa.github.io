@@ -1,0 +1,7 @@
+    footer{height: auto;}
+    .left-footer{width: 100%; padding: 13px 15px;text-align:center}
+    .right-footer{width: 100%; padding: 13px 15px;text-align:center}
+    .content-404 .form-newsletter{width:100%;}
+    .menu-footer li a {
+	    padding: 0 10px;
+	}
