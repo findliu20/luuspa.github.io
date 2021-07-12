@@ -1,0 +1,378 @@
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Home 1 - Noren</title>
+      <link rel="icon" type="images/favicon" href="images/favicon.png">
+      <link rel="stylesheet" type="text/css" href="css/linea-arrows.css">
+      <link rel="stylesheet" type="text/css" href="css/linea-basic.css">
+      <link rel="stylesheet" type="text/css" href="css/linea-ecommerce.css">
+      <link rel="stylesheet" type="text/css" href="css/linea-basic-elaboration.css">
+      <link rel="stylesheet" type="text/css" href="css/linea-music.css">
+      <link rel="stylesheet" type="text/css" href="css/linea-software.css">
+      <link rel="stylesheet" type="text/css" href="css/linea-weather.css">
+      <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+      <link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+      <link rel="stylesheet" type="text/css" href="css/chosen.css">
+      <link rel="stylesheet" type="text/css" href="css/woocommerce.css">
+      <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <link rel="stylesheet" type="text/css" href="css/hanhluu.css">
+      <!-- js link -->
+      <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous"> -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
+      <!-- js code -->
+      <script type="text/javascript">
+         document.addEventListener("DOMContentLoaded", function(){
+            
+            el_autohide = document.querySelector('.autohide');
+            
+            // add padding-top to bady (if necessary)
+            navbar_height = document.querySelector('.navbar').offsetHeight;
+            document.body.style.paddingTop = navbar_height + 'px';
+
+            if(el_autohide){        
+               var last_scroll_top = 0;
+               window.addEventListener('scroll', function() {
+               let scroll_top = window.scrollY;
+             if(scroll_top < last_scroll_top) {
+                  el_autohide.classList.remove('scrolled-down');
+                  el_autohide.classList.add('scrolled-up');
+              }
+              else {
+                  el_autohide.classList.remove('scrolled-up');
+                  el_autohide.classList.add('scrolled-down');
+              }
+              last_scroll_top = scroll_top;
+            }); 
+            // window.addEventListener
+            }
+            // if    
+         }); 
+            // DOMContentLoaded  end
+      </script>
+   </head>
+   <body>
+      <!-- header day nay luu -->
+      <header id="header" class="header header-v1 navbar autohide" >
+         <div class="main-header">
+            <div class="main-header">
+               <div class="logo"><a href="F:/SU21/Webdesign2/Practiceeee4/index.html"><img src="images/logo.svg" alt="logo" /></a></div>
+               <div class="header-right">
+                  <a href="#" class="button-toggle toggle-mainmenu" data-toggle="nr-mainmenu">
+                     <div class="nr-menu-bar">
+                        <span class="menu-bar"></span>
+                        <span class="menu-bar"></span>
+                        <span class="menu-bar"></span>
+                     </div>
+                     <span class="icon icon-arrows-slim-up"></span>
+                  </a>
+                  <a href="" class="button-toggle toggle-cart" data-toggle="nr-cart-header">
+                     <div class="cart-number">
+                        <span class="icon icon-ecommerce-bag"></span>
+                        <span class="number-cart">0</span>
+                     </div>
+                     <span class="icon icon-arrows-slim-up"></span> 
+                  </a>
+                  <a href="#" class="button-toggle toggle-loginform" data-toggle="nr-account">
+                     <span class="icon icon-software-layers2"></span>
+                     <span class="icon icon-arrows-slim-up"></span>
+                  </a>
+                  <a href="#" class="button-toggle toggle-searchform" data-toggle="nr-search-head">
+                     <span class="icon icon-basic-magnifier"></span>
+                     <span class="icon icon-arrows-slim-up"></span>
+                  </a>
+                  <nav class="navigation-north-2">
+                     <ul>
+                        <li class="menu-item-has-children">
+                           <a href="F:/SU21/Webdesign2/Practiceeee4/index.html" title="">HOME</a>
+                        </li>
+                        
+                        <li class="menu-item-has-children">
+                           <a href="F:/SU21/Webdesign2/Practiceeee4/about.html">ABOUT</a>
+                        </li>
+                        <li class="menu-item-has-children">
+                           <a href="F:/SU21/Webdesign2/Practiceeee4/service.html">SERVICE</a>
+                        </li>
+                        <li class="menu-item-has-children">
+                           <a href="#">BLOG</a>
+                        </li>
+                        <li class="menu-item-has-children">
+                           <a href="#">CONTACT</a>
+                        </li>
+                     </ul>
+                  </nav>
+               </div>
+            </div>
+         </div>
+         <!-- /.main-header -->
+         <div class="toggle-header">
+            <div id="nr-account" class="nr-account fullheight not-logged-in">
+               <div class="ts-my-account">
+                  <div class="inner-my-acount">
+                     <div id="ts-login-form" class="ts-login-form ts-my-account-form show slide">
+                        <div class="inner-login">
+                           <span class="title">Registered</span>
+                           <form  class="login-form">
+                              <div class="form-group">
+                                 <label for="username">Username or email address * </label>
+                                 <input type="text" class="form-control" id="username">
+                              </div>
+                              <div class="form-group">
+                                 <label for="password">Password * </label>
+                                 <input type="password" class="form-control" id="password">
+                              </div>
+                              <button type="submit">Login</button>
+                              <div class="bottom-login">
+                                 <div class="checkbox-remember">
+                                    <input type="checkbox">Remember me
+                                 </div>
+                                 <a href="#">Forgot Your Password ?</a>
+                              </div>
+                              <a href="#" class="ts-register">Register</a>
+                           </form>
+                        </div>
+                     </div>
+                     <!-- /.ts-login-form -->
+                     <!-- /ts-register-form -->
+                  </div>
+                  <!-- /.inner-my-acount -->
+               </div>
+               <!-- /.ts-my-account -->
+            </div>
+            <!-- /.content-inner -->
+            <div id="nr-search-head" class="nr-search-head fullheight just-hidden" >
+               <div class="ts-serch-inner">
+                  <form class="ts-search-form search-form" method="get"  >
+                     <input type="search" value="" placeholder="Search here..." class="search" name="s">
+                     <span><button type="submit" class="search-submit"><i class="icon icon-arrows-slide-right2"></i></button></span>
+                  </form>
+               </div>
+            </div>
+            <div id="nr-mainmenu" class="nr-mainmenu fullheight" >
+               <div class="ts-mainmenu-inner">
+                  <nav class="navigation-north">
+                     <div class="toggle-dropdown-menu">
+                        <ul>
+                           <li class="lever0 item-toggle-dropdown has-sub">
+                              <a href="#">Home</a>
+                              
+                           </li>
+                           <li class="lever0 item-toggle-dropdown has-sub">
+                              <a href="#">Shop</a>
+                              
+                           </li>
+                           <li class="lever0  item-toggle-dropdown has-sub">
+                              <a href="#">Page</a>
+                              
+                           </li>
+                           <li class="lever0 item-toggle-dropdown has-sub"><a href="#">Elements</a>
+                              
+                           </li>
+                           <li class="lever0 item-toggle-dropdown has-sub"><a href="#">Blog</a>
+                              
+                           </li>
+                           <li class="lever0 item-toggle-dropdown has-sub"><a href="#">Contact</a>
+                              
+                           </li>
+                        </ul>
+                     </div>
+                  </nav>
+                  <div class="ts-newsletter">
+                     <h6>Subscribe our newletters</h6>
+                     <form  class="form-newsletter">
+                        <input type="text" placeholder="Your email address...">
+                        <span><button type="submit">SUBMIT</button></span>
+                     </form>
+                  </div>
+                  <div class="ts-social-header">
+                     <h6>Follow us</h6>
+                     <ul class="social-header">
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-tumblr"></i></a></li>
+                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                        <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                     </ul>
+                  </div>
+               </div>
+               <!-- /.ts-mainmenu-inner -->
+            </div>
+            <!-- /nr-mainmenu -->
+            <div id="nr-cart-header" class="nr-cart-header fullheight">
+               <div class="widget shoping-cart-widget">
+                  <h5>Your cart</h5>
+                  <div class="widget_shopping_cart_content">
+                     <ul class="cart_list product_list_widget">
+                        <li>
+                           <a title="Remove this item" class="remove" href="#">×</a>
+                           <a href="#" class="thumb-product"><img src="images/73x84.png" alt=""></a>
+                           <div class="widget-cart-title-product">
+                              <a href="#">Over Tropics Shirt</a>
+                              <span class="quantity">Qty: 1</span>
+                              <span class="amount">$300.00</span>
+                           </div>
+                        </li>
+                       
+                     </ul>
+                     <p class="total"><strong>Subtotal:</strong> <span class="amount">$600.00</span></p>
+                     <p class="buttons">
+                        <a class="button wc-forward" href="#">View Cart</a>
+                        <a class="button checkout wc-forward" href="#">Checkout</a>
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- /.toggle-header -->
+      </header>
+      <!-- header end day nay -->
+
+
+
+
+
+
+      <section id="main-container" class="main-container">
+
+         <!-- phan nay la -->
+         <div class="About_page">
+            <div class="hero_about">
+              <figure><img src="image/c13.png" alt=""></figure>
+            </div>
+            
+            <div class="About_page_facing">
+               <p><i><b>ABOUT </i></b> NOREN.</p>
+            </div>
+
+           
+           
+            
+            
+            <!-- <div class="descripion">
+               
+               <h1> WE FOCUS ON WHAT’S REALLY IMPORTANT. YOUR CONFIDENCE AND YOUR SKIN HEALTH.</h1>
+               <h3 id="h3_nec"> OUR SKILLED ESTHETICIANS GET TO KNOW YOUR COMPLEXION AND DELIVER TAILOR-MADE SKINCARE JUST FOR YOU. DERMAPLANING TO ENZYME EXFOLIATION, LED LIGHT THERAPY TO TREATMENT MASKS, THERE’S NO LIMIT TO WHAT WE CAN OFFER IN ONE SESSION.</h3>
+               <h5> SEE HOW IT WORKS</h5> 
+              
+            </div> -->
+            <section>
+               <div class="iloveyou">                 
+                  <div class="imagesss_about">
+                    <figure> <img src="image/c14.jpg" alt=""></figure>
+                  </div>                    
+                  <div class="quotesss_about">
+                     <div class="quotesss_about__container">
+                        <figure> <img class="quotesss_about__image" src="image/c15.png" alt=""></figure>
+                     </div>
+                     <div class="quotesss_about__description">
+                        <h7 id="hero_about"> ABOUT US</h7>
+                        <p id="paragraph_about"> We got tired of stuffy spas and expensive memberships, so we set out to make it more accessible for everyone. Our mission is to provide personalized skincare through customized facials, expert advice and product recommendations to help you put your best face forward. </p>
+                        <p id="paragraph_about2">We got tired of stuffy spas and expensive memberships, so we set out to make it more accessible for everyone. Our mission is to provide personalized skincare through customized facials, expert advice and product recommendations</p>
+                     </div>
+                  </div>
+               </div>
+            </section>
+
+            <section> 
+               <div class="disciption_2">
+                  <div class="yeye">
+                     <figure ><img src="image/img_about_3.svg"></figure>
+                  </div>
+                  <div class="first_para">
+                     <h9 class="text_small"> HI, SKIN. </h9>
+                     <h9 class="text_small">FACIALS FOR ALL.</h9>
+                  </div>
+
+                  <div class="middle_para">
+                     <h10 class="hero_about_2"> EACH OF OUR STUDIOS ARE </h10>
+                     <h10 class="hero_about_2">THOUGHTFULLY CURATED SPACES </h10>
+                     <h10 class="hero_about_2">DESIGNED TO REJUVENATE AND EXCITE</h10>
+                     <h10 class="hero_about_2">YOU IN YOUR JOURNEY TO CLEAR,</h10>
+                     <h10 class="hero_about_2">HEALTHY, YOUTHFUL SKIN.</h10>
+                  </div>
+
+                  <div class="last_para">
+                     <h11 class="CTA1"> Tell us about your concerns,</h11>
+                     <h11 class="CTA1">and we’ll take it from there.</h11>
+                  </div>
+
+
+                  <div class="yeye2">
+                     <figure ><img src="image/yeye2.svg"></figure>
+                  </div>
+                  
+               </div>
+
+
+            </section>
+
+
+
+
+         </div>
+      </section>
+      <footer>
+         <div class="left-footer">
+            <div class="logo-footer"><a href="#"><img class="left-footer__image" src="images/logo_footer.svg" alt=""></a></div>
+            <div class="copyright">
+               <div>
+               <p>© Noren 2016. A project design by <a href="#">HANHLUU</a></p>
+               </div>
+               <div style="padding-top: 160px; font-size: 17px; font-family: HelveticaNeue">
+               <p>EVERYDAY: 7AM-10PM</p>
+                <p>0919-299-520</p>
+               </div>
+            </div>
+            
+
+         </div>
+         <div class="right-footer">
+           <!--  <div id="nr-search-head" class="nr-search-head fullheight just-hidden" >
+               <div class="ts-serch-inner">
+                  <form class="ts-search-form search-form" method="get"  >
+                     <input type="search" value="" placeholder="Search here..." class="search" name="s">
+                     <span><button type="submit" class="search-submit"><i class="icon icon-arrows-slide-right2"></i></button></span>
+                  </form>
+               </div>
+            </div> -->
+            <div class="ts-newsletter">
+             <form  class="form-newsletter">
+               <input class="form-newsletter__input" type="text" placeholder="Your email address...">
+               <span><button type="submit">SUBMIT</button></span>
+             </form>
+            </div>
+            <ul class="ts-social-footer">
+               <li><a href="https://twitter.com/?lang=en"><i class="fa fa-twitter"></i></a></li>
+               <li><a href="https://www.behance.net/hnhluu?tracking_source=search_users_recommended%7Chnh%20luu"><i class="fa fa-behance"></i></a></li>
+               <li><a href="https://www.tumblr.com/"><i class="fa fa-tumblr"></i></a></li>
+               <li><a href="https://dribbble.com/"><i class="fa fa-dribbble"></i></a></li>
+            </ul>
+            <ul class="menu-footer">
+               <li><a href="#">HISTORY</a></li>
+               <li><a href="#">BLOG</a></li>
+               <li><a href="#">FAQS</a></li>
+               <li><a href="#">ORDER TRACKING</a></li>
+               <li><a href="#">CONTACT</a></li>
+            </ul>
+         </div>
+         
+      </footer>
+      <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+      <script type="text/javascript" src="js/jquery-ui.js"></script>
+      <script type="text/javascript" src="js/jquery.debouncedresize.js"></script>
+      <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+      <script type="text/javascript" src="js/chosen.jquery.min.js"></script>
+      <script type="text/javascript" src="js/isotope.pkgd.js"></script>
+      <script type="text/javascript" src="js/packery-mode.pkgd.min.js"></script>
+      <script type='text/javascript' src='js/debounced-resize/jquery.debouncedresize.js'></script>
+      <script type="text/javascript" src="js/nicescroll/jquery.nicescroll.min.js"></script>
+      <script type="text/javascript" src="js/wow.min.js"></script>
+      <script>
+       new WOW().init();
+      </script>
+      <script src="js/front-end.js"></script>
+      <script src="js/custom.js"></script>
+   </body>
+</html>
